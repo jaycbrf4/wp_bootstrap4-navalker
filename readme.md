@@ -84,7 +84,7 @@ To display the menu you must associate your menu with your theme location. You c
 
 Displaying the Titles and Descriptions 
 -------------------
-To display the menu item descriptions you need to click the tab **Screen Options** at the top of the screen and check "Title Attribute" and "Descriptions". The title attribute is part of the menu ite's link. the description text is not inside the menu otem's link so you can add lists for additional links there.
+To display the menu item descriptions you need to click the tab **Screen Options** at the top of the screen and check "Title Attribute" and "Descriptions". The title attribute is part of the menu ite's link. the description text is not inside the menu item's link so you can add lists for additional links there.
 
 To get the submenus to open on hover
 --------------------
