@@ -1,7 +1,7 @@
 wp-bootstrap4-navwalker
 ======================
 
-**A custom WordPress nav walker class to fully implement the Bootstrap 4.0.0b navigation style in a custom theme using the WordPress built in menu manager.**
+**A custom WordPress nav walker class to fully implement the Bootstrap 4.0.0 navigation style in a custom theme using the WordPress built in menu manager.**
 
 This version adds the support for multi level dropdowns.
 
