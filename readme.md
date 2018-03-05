@@ -27,7 +27,7 @@ Update your `wp_nav_menu()` function in `header.php` to use the new walker by ad
 ```php
  <?php
           $args = array(
-		  'theme_location' => 'primary',
+		  'theme_location' => 'mega_menu',
 		  'depth' => 0,
 		  'container' => '',
 		  'menu_class'  => 'nav navbar-nav',
