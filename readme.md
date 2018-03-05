@@ -134,43 +134,9 @@ The following jQuery will be used to add functionality to popper.js to open and 
 				});
 			})(jQuery); //Close jQuery
 
-Or it can be done with CSS and not change the "show" class/* Make dropdown visible on hover */
+Or you can omit the JS and not toggle the show class-
 			
-			@media (min-width: 767px) {
-			  .dropdown > .dropdown-menu {
-			    position: absolute;
-			    top: 100%;
-			    left: auto;
-			    z-index: 1000;
-			    float: none;
-			    min-width: 10rem;
-			    padding: 1rem;
-			    list-style: none;
-			    border: none;
-			    border-radius: 0;
-			    box-shadow: none;
-			    opacity: 0;
-			    margin-top: 11px !important;
-			    display: block;
-			    visibility:hidden;
-			    min-width: 150px;
-			    transition: all  0.2s ease-in-out;
-			  }
-			  .dropdown:hover > .dropdown-menu {
-			    visibility:visible;
-			    display: block;
-			    opacity: 1;
-			    margin-top: 7px !important; 
-			    border-bottom-right-radius: 8px;
-			    border-bottom-left-radius: 8px;
-			    transition: all  0.2s ease-in-out;
-			  }
-			    .mega-menu-parent.dropdown .dropdown-menu {
-			    position: absolute;
-			    left:  0;
-			  }
-			}
-
+			
 
 
 Original work by johnmegahan https://gist.github.com/1597994, Emanuele 'Tex' Tessore https://gist.github.com/3765640
