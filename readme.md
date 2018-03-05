@@ -61,10 +61,10 @@ Typically the menu is wrapped with additional markup, here is an example of a ` 
       <!-- Collect the nav links from WordPress -->
         <div class="collapse navbar-collapse" id="jd-bootstrap-nav-collapse">         
           <?php $args = array(
-            'theme_location' => 'primary',
+            'theme_location' => 'mega_menu',
             'depth' => 0,
             'container' => '',
-            'menu_class'  => 'nav navbar-nav',
+            'menu_class'  => 'navbar-nav mr-auto',
             'walker'  => new BootstrapNavMenuWalker()
             );
             wp_nav_menu($args);
@@ -133,6 +133,43 @@ The following jQuery will be used to add functionality to popper.js to open and 
 			    });
 				});
 			})(jQuery); //Close jQuery
+
+Or it can be done with CSS and not change the "show" class/* Make dropdown visible on hover */
+			
+			@media (min-width: 767px) {
+			  .dropdown > .dropdown-menu {
+			    position: absolute;
+			    top: 100%;
+			    left: auto;
+			    z-index: 1000;
+			    float: none;
+			    min-width: 10rem;
+			    padding: 1rem;
+			    list-style: none;
+			    border: none;
+			    border-radius: 0;
+			    box-shadow: none;
+			    opacity: 0;
+			    margin-top: 11px !important;
+			    display: block;
+			    visibility:hidden;
+			    min-width: 150px;
+			    transition: all  0.2s ease-in-out;
+			  }
+			  .dropdown:hover > .dropdown-menu {
+			    visibility:visible;
+			    display: block;
+			    opacity: 1;
+			    margin-top: 7px !important; 
+			    border-bottom-right-radius: 8px;
+			    border-bottom-left-radius: 8px;
+			    transition: all  0.2s ease-in-out;
+			  }
+			    .mega-menu-parent.dropdown .dropdown-menu {
+			    position: absolute;
+			    left:  0;
+			  }
+			}
 
 
 
